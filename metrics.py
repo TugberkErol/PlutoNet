@@ -2,6 +2,16 @@ import tensorflow as tf
 
 smooth = 1e-7
 
+def dice_coef(y_true, y_pred, smooth=1e-7):
+    y_true_f = tf.keras.layers.Flatten()(y_true)
+    y_pred_f = tf.keras.layers.Flatten()(y_pred)
+
+    y_pred_f = tf.cast(y_pred_f > 0.5, dtype=tf.float32)
+    
+    intersection = tf.reduce_sum(y_true_f * y_pred_f)
+    
+    return (2. * intersection + smooth) / (tf.reduce_sum(y_true_f) + tf.reduce_sum(y_pred_f) + smooth)
+    
 def dice_loss_1(y_true, y_pred):
     return 1.0 - dice_coef(y_true, y_pred)
 
