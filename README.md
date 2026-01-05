@@ -7,7 +7,32 @@ Deep learning models are used to minimize the number of polyps that goes unnotic
 - MICCAI 2024 - AECAI
 ![sample](aecai2024.png)
 
-
+## File tree
+```
+PlutoNet                           
+├─images_article                          
+│  ├─TestDataset                       
+│  │  ├─CVC-300                 
+│  │  │  ├─images
+│  │  │  └─masks
+│  │  ├─CVC-ClinicDB
+│  │  │  ├─images
+│  │  │  └─masks
+│  │  ├─CVC-ColonDB
+│  │  │  ├─images
+│  │  │  └─masks
+│  │  ├─ETIS-LaribPolypDB
+│  │  │  ├─images
+│  │  │  └─masks
+│  │  └─Kvasir
+│  │      ├─image
+│  │      └─mask
+│  └─train_images
+│  └─train_masks   
+│  └─val_images
+   └─val_masks    
+├─files
+```
 ## Citation
 - If you find this work is helpful, please cite our paper
 ```
