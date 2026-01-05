@@ -7,6 +7,11 @@ Deep learning models are used to minimize the number of polyps that goes unnotic
 - MICCAI 2024 - AECAI
 ![sample](aecai2024.png)
 
+
+Datasets used for training and testing are obtained from the[PraNet](https://github.com/DengPingFan/PraNet). Ensure the contents are unzipped into the 'images_article' subfolder.
+- [Training Dataset](https://drive.google.com/file/d/1lODorfB33jbd-im-qrtUgWnZXxB94F55/view?usp=sharing)
+- [Testing Dataset](https://drive.google.com/file/d/1o8OfBvYE6K-EpDyvzsmMPndnUMwb540R/view?usp=sharing)
+
 ## File tree
 ```
 PlutoNet                           
